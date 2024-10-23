@@ -103,7 +103,7 @@ fun TopicCard(topic: Topic, modifier: Modifier = Modifier) {
                         .aspectRatio(1f),
                     contentScale = ContentScale.Crop
                 )
-            }
+            }//Fin Box
 
             Column {
                 Text(
@@ -130,15 +130,15 @@ fun TopicCard(topic: Topic, modifier: Modifier = Modifier) {
                     )
                 }
             }
-        }
-    }
-}
+        }//Fin Row
+    }//Fin Card
+}//Fin TopicCard
 
 @Preview(showBackground = true)
 @Composable
 fun TopicPreview() {
     CoursesTheme {
-        val topic = Topic(R.string.photography, 321, R.drawable.photography)
+        val topic = Topic(R.string.photography, 321, R.drawable.drawing)
         Column(
             modifier = Modifier.fillMaxSize(),
             verticalArrangement = Arrangement.Center,
